@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header {
+    flex: 0 0 50px;
+    background-color: blue;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    flex: 0 0 150px;
+    background-color: red;
+    text-align: center;
+  }
+
+  .main {
+    flex: 1;
+    background-color: white;
+    text-align: center;
+  }
+
+  .footer {
+    flex: 0 0 50px;
+    background-color: green;
+    text-align: center;
+  }
