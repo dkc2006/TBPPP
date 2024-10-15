@@ -1,9 +1,10 @@
-## BootStrap ScreenSize
+# BootStrap ScreenSize
 
-|name | dimension|availability|
-|extra small(XS) | < 576 px | 100% |
-|Small(sm) | 576-768 | 720px |
-|Medium(md) | 768-992 | 960px |
-|Large(lg) | 992-1200 | 1140px |
-|extra large(xl) | 1200-1400| 1320 |
-|double excel (xxl)| > 1400 | 1320 |
+| name                  | dimension | availability |
+| --------------------- | --------- | ------------ |
+| extraSmall(xs)        | <576px    | 100%         |
+| small(sm)             | 576-768   | 720px        |
+| medium(md)            | 768-992   | 960px        |
+| large(lg)             | 992-1200  | 1140px       |
+| extraLarge(xl)        | 1200-1400 | 1320px       |
+| doubleExtraLarge(xxl) | >1400     | 1320px       |
