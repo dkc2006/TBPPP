@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People</title>
+    <style>
+      /* Global reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      /* Navigation styles */
+      nav {
+        background-color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end; /* Aligns the links to the right */
+      }
+
+      ul li {
+        margin-right: 20px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        color: white;
+        background-color: #333;
+        transition: background-color 0.3s ease;
+      }
+
+      ul li a:hover {
+        background-color: lightblue;
+        color: white;
+      }
+
+      /* Main layout container */
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .header {
+        flex: 0 0 50px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        flex: 0 0 150px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        flex: 1;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+      }
+
+      .footer {
+        flex: 0 0 50px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Media query for responsiveness */
+      @media (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+
+        .sidebar-left,
+        .sidebar-right {
+          flex: 0 0 50px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        ul {
+          flex-direction: column;
+        }
+
+        ul li {
+          margin-bottom: 10px;
+        }
+
+        ul li a {
+          text-align: center;
+        }
+
+        .header,
+        .footer {
+          font-size: 20px;
+        }
+
+        .main {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./home.html" target="_blank">Home</a></li>
+        <li><a href="./about.html" target="_blank">About</a></li>
+        <li><a href="./posts.html" target="_blank">Posts</a></li>
+        <li><a href="./jobs.html" target="_blank">Jobs</a></li>
+        <li><a href="./people.html" target="_blank">People</a></li>
+      </ul>
+    </nav>
+
+    <p>This is People</p>
+
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="content">
+        <div class="sidebar-left">Sidebar Left</div>
+        <div class="main">Main Content</div>
+        <div class="sidebar-right">Sidebar Right</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
