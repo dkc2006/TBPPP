@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.timetable {
+    margin-top: 50px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+.timetable th {
+    background-color: #f0f0f0;
+}
+
+.lunch {
+    background-color: #d9edf7;
+    font-weight: bold;
+}
+
+.clickable {
+    background-color: #ffffff;
+}
+
+.clickable:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.teacher-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.teacher-details p {
+    font-size: 16px;
+}
+
+.card {
+    margin: 20px 0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Timetable</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4">Class Timetable</h1>
+      <table class="table table-bordered text-center timetable">
+        <thead>
+          <tr>
+            <th>Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00 - 10:00</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Ms. Rani">Arts</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td class="clickable" data-teacher="Ms. Thompson">Social</td>
+            <td class="clickable" data-teacher="Mr. Ram">Hindi</td>
+            <td class="clickable" data-teacher="Mrs. Johnson">English</td>
+            <td class="clickable" data-teacher="Ms. Thompson">Social</td>
+            <td class="clickable" data-teacher="Mr. White">Sports</td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:00</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Mr. Rishi">Project</td>
+          </tr>
+          <tr>
+            <td>12:00 - 1:00</td>
+            <td colspan="5" class="lunch">Lunch</td>
+          </tr>
+          <tr>
+            <td>1:00 - 2:00</td>
+            <td class="clickable" data-teacher="Ms. Thompson">Social</td>
+            <td class="clickable" data-teacher="Mr. Ram">Hindi</td>
+            <td class="clickable" data-teacher="Mrs. Johnson">English</td>
+            <td class="clickable" data-teacher="Ms. Thompson">Social</td>
+            <td class="clickable" data-teacher="Mr. White">Sports</td>
+          </tr>
+          <tr>
+            <td>2:00 - 3:00</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Mr. John Doe">Science</td>
+            <td class="clickable" data-teacher="Mr. Smith">Maths</td>
+            <td class="clickable" data-teacher="Mr. Rishi">Project</td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        id="teacherDetails"
+        class="teacher-details card"
+        style="display: none"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Teacher Details</h5>
+          <p id="teacherName"></p>
+          <p id="subjectName"></p>
+          <a href="./index.html" class="btn btn-primary" onclick="goBack()"
+            >Go Back to Timetable</a
+          >
+          <a
+            href="./teacher.html"
+            target="_blank"
+            class="btn btn-secondary"
+            onclick="goBack()"
+            >All Teacher and details
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
