@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+nav button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+nav button:hover {
+  background-color: #004080;
+}
+#todo-container {
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+}
+#todo-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+#todo-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#todo-container button:hover {
+  background-color: #0056b3;
+}
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+#todo-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#todo-list li:hover {
+  background-color: #e9ecef;
+  transform: scale(1.02);
+}
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+  color: #333;
+  font-size: 1em;
+}
+.action-btns button {
+  margin: 0 3px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.action-btns button:hover {
+  background-color: #e63946;
+}
+.action-btns button:first-child {
+  background-color: #f0ad4e;
+}
+.action-btns button:first-child:hover {
+  background-color: #ec9a29;
+}
+#logoimage {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 4px;
+  left: 35px;
+}
