@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar with buttons -->
+    <nav class="navbar">
+      <button
+        onclick="showSection('alarm')"
+        id="alarmBtn"
+        class="nav-btn active"
+      >
+        Alarm Clock
+      </button>
+      <button onclick="showSection('timer')" id="timerBtn" class="nav-btn">
+        Timer
+      </button>
+      <button
+        onclick="showSection('stopwatch')"
+        id="stopwatchBtn"
+        class="nav-btn"
+      >
+        Stopwatch
+      </button>
+      <button onclick="showSection('time')" id="timeBtn" class="nav-btn">
+        Time
+      </button>
+    </nav>
+
+    <!-- Alarm Section -->
+    <div id="alarm" class="feature">
+      <h2>Alarm Clock</h2>
+      <label for="alarmHour">Hour:</label>
+      <input type="number" id="alarmHour" min="1" max="12" />
+      <label for="alarmMinute">Minute:</label>
+      <input type="number" id="alarmMinute" min="0" max="59" />
+      <select id="alarmAmpm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+      <button onclick="setAlarm()">Set Alarm</button>
+
+      <p id="alarmStatus"></p>
+
+      <!-- Alarm List -->
+      <ul id="alarmList"></ul>
+    </div>
+
+    <!-- Timer Section -->
+    <section id="timer" class="feature">
+      <h2>Timer</h2>
+      <div>
+        <input type="number" id="timerHours" placeholder="HH" min="0" />
+        <input
+          type="number"
+          id="timerMinutes"
+          placeholder="MM"
+          min="0"
+          max="59"
+        />
+        <input
+          type="number"
+          id="timerSeconds"
+          placeholder="SS"
+          min="0"
+          max="59"
+        />
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="stopTimer()">Stop Timer</button>
+        <div id="countdownDisplay">00:00:00</div>
+      </div>
+    </section>
+
+    <!-- Stopwatch Section -->
+    <section id="stopwatch" class="feature">
+      <h2>Stopwatch</h2>
+      <div>
+        <p id="stopwatchDisplay">00:00:00</p>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+    </section>
+
+    <!-- Current Time Section -->
+    <section id="time" class="feature">
+      <h2>Current Time</h2>
+      <div>
+        <p id="currentTimeDisplay">--:--:--</p>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

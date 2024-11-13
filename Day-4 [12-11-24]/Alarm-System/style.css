@@ -1,0 +1,172 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: #f4f4f9;
+    padding-top: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn {
+    color: white;
+    background-color: #444;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #666;
+    transform: translateY(-3px);
+}
+
+.active {
+    background-color: #00d4ff;
+}
+
+/* Feature Sections */
+.feature {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.feature.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+    color: #f4f4f9;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Timer Display Styling */
+#countdownDisplay, #stopwatchDisplay, #currentTimeDisplay {
+    font-size: 48px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #00d4ff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+#countdownDisplay {
+    color: #ffdd59;
+}
+
+/* Input Styling */
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+    background-color: #333;
+    color: #f4f4f9;
+    border: 2px solid #00d4ff;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #ffdd59;
+    transform: translateY(-2px);
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #004392;
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Active Button in Timer */
+#stopButton {
+    background-color: #ff4757;
+}
+
+#resetButton {
+    background-color: #1e90ff;
+}
+
+/* Subtle Animations */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00d4ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #00d4ff;
+    }
+    100% {
+        box-shadow: 0 0 5px #00d4ff;
+    }
+}
+
+#countdownDisplay, #stopwatchDisplay, #currentTimeDisplay {
+    animation: glow 1.5s infinite;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #ffdd59;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
